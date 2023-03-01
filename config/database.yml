@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: ask_aunty_production
-  username: ask_aunty
-  password: <%= ENV["ASK_AUNTY_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
